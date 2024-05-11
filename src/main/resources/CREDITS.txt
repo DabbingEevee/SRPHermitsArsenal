@@ -1,0 +1,5 @@
+Unless otherwise states, it is made by ExistingEevee.
+
+Textures:
+  - ronald (thesillydot)
+    + assets/hermitsarsenal/textures/item/weapon/seismic_warhammer.png

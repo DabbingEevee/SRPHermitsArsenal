@@ -1,0 +1,64 @@
+itemGroup.hermitsarsenal.name=Hermit's Arsenal
+enchantment.lucky=Lucky
+enchant,emt.lucky.desc=Makes it more probable that your weapon's effects will proc.
+
+item.incinerated_flesh.name=Incinerated Flesh
+item.incinerated_flesh.desc=A charred and completely unrecognizable chunk of flesh. Rarely dropped from burning parasites.
+
+item.fragmented_genome.name=Fragmented Genome
+item.fragmented_genome.desc=A sample of DNA, completely twisted by an unknown force. Rarely dropped from burning adapteds.
+
+item.gene_desplicer.name=Gene De-splicer
+item.gene_desplicer.desc=Has a chance to remove %1$ points for all adaptations, but will give Resistance I when this happens.
+
+item.outbreak_dagger.name=Outbreak Dagger
+item.outbreak_dagger.desc=Has a chance to apply a weaker version of stacking Viral to any attacked targets.
+
+item.viral_gland.name=Viral Gland
+item.viral_gland.desc=An intact gland, still twitching and spewing noxious gas occasionally. Very rarely dropped from viral parasites.
+
+item.reprogrammed_gland.name=Reprogrammed Gland
+item.reprogrammed_gland.desc=Dispite still twitching and spewing gas, it has a almost sweet smell to it.
+
+item.vengence_core.name=Vengeful Core
+item.vengence_core.desc=A strange object that radiates hatred, especially towards its enemies. Obtained by killing an adapted with a living core in the offhand.
+
+item.wrathful_core.name=Wrathful Core
+item.wrathful_core.desc=A strange object that seems radiates pure malice. Obtained by killing a pure with a living core in the offhand.
+
+item.ignis_knife.name=Ignis Knife
+item.ignis_knife.desc=Will ignite the target and has a chance to deal an additional %1$ fire damage. Fire Aspect will increase the fire damage dealt by %2$ per level.
+item.ignis_knife.egg_desc=Will ignite the target and has a chance to deal an additional %1$ fire damage. Fire Aspect will increase the fire damage dealt by %2$ per level. According to TreeVirus, it tastes spicy...
+
+item.ignis_chakram.name=Ignis Chakram
+item.ignis_chakram.desc=Will ignite the target and has a chance to deal an additional %1$ fire damage. Fire Aspect will increase the fire damage dealt by %2$ per level. Can be thrown to pierce through multiple entities.
+item.ignis_chakram.egg_desc=Will ignite the target and has a chance to deal an additional %1$ fire damage. Fire Aspect will increase the fire damage dealt by %2$ per level. Can be thrown to pierce through multiple entities. TreeVirus probably still would probably find that it tastes spicy...
+
+item.cytokine_mutator.name=Cytokine Mutator
+item.cytokine_mutator.desc=Has a chance to remove %1$ points for all adaptations, and will deal %2$ points of additional unblockable damage per deleted adaptation point.
+
+item.longarm_appendage.name=Longarm Appendage
+item.longarm_appendage.desc=Will increase reach by %1$ blocks when held in the offhand.
+
+item.extended_appendage.name=Extended Appendage
+item.extended_appendage.desc=Will increase reach by %1$ blocks when held in the offhand.
+
+item.seizer_spear.name=Seizer Spear
+item.seizer_spear.desc=Holding right click will throw a mini-seizer that will grab onto the closest mob the spear has recently struck. Also has a chance to apply Slowness %1$ and Weakness %2$.
+
+item.seismic_warhammer.name=Seismic Warhammer
+item.seismic_warhammer.desc=Sneaking and attacking the ground will spawn a wave. Attacking an entity will have a chance stun them for a short period, as well as applying Slowness %1$, Weakness %2$, and Blindness I.
+item.seismic_warhammer.egg_desc=Sneaking and attacking the ground will spawn a wave. Attacking an entity will have a chance stun them for a short period, as well as applying Slowness %1$, Weakness %2$, and Blindness I. Evan_Wingerter could probably use this to ban annoying children.
+
+entity.spear_seizer_hermitsarsenal.name=Spear Seizer
+entity.ignis_chakram_hermitsarsenal.name=Ignis Chakram
+
+item.unraveled_muscles.name=Unraveled Muscles
+item.unraveled_muscles.desc=A twitching mass of now nearly unrecognisable flesh, clearly catalyzed and changed by an unknown force. Very rarely dropped from viral parasites.
+item.unraveled_muscles.egg_desc=A twitching mass of now nearly unrecognisable flesh, clearly catalyzed (Catalyst??? Catalyst - Parasites?????) and changed by an unknown force. Very rarely dropped from ferals.
+
+item.rewoven_flesh.name=Rewoven Flesh
+item.rewoven_flesh.desc=A sturdy clump of woven together flesh that still seem to twitch and convulse randomly.
+
+item.rekindled_dispatcher.name=Rekindled Dispatcher
+item.rekindled_dispatcher.desc=A piece of a dispatcher, brought back to life with a unusual hatred for its enemies.

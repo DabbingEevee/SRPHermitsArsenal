@@ -1,0 +1,16 @@
+{
+    "compatibilityLevel": "JAVA_8",
+    "package": "com.existingeevee.hermitsarsenal.mixin",
+    "refmap": "refmap.hermitsarsenal.json",
+    "mixins": [
+    	"MixinLoadController", 
+    	
+    	"reach.MixinEntityPlayer",
+    	
+    	"sweep_particle.MixinEntityPlayer"
+    ],
+    "client": [
+        "left_click.MixinMinecraft"
+    ],
+    "server": []
+}

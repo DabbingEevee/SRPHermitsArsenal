@@ -1,0 +1,28 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "hermitsarsenal:item/weapon/ignis_chakram"
+    },
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -75, -100],
+			"translation": [0, -2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 105, -100],
+			"translation": [0, -2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-30, -85, 0],
+			"translation": [0, 2, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-30, 95, 0],
+			"translation": [0, 2, 0]
+		},
+		"head": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 6.75, 0]
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "compatibilityLevel": "JAVA_8",
+    "package": "com.existingeevee.hermitsarsenal.mixin",
+    "refmap": "refmap.hermitsarsenal.json",
+    "mixins": [
+    	"piss_rupter.MixinAddPissVarient",
+    	
+    	"hit.MixinEntityBody",
+    	"hit.MixinSRPPacketEntityBodyHit$Handler"
+    ],
+    "client": [
+    	"piss_rupter.MixinRenderPissVarient"
+    ],
+    "server": []
+}
