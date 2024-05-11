@@ -16,6 +16,10 @@ import com.existingeevee.hermitsarsenal.init.HAEffects;
 import com.existingeevee.hermitsarsenal.misc.HAToolMaterials;
 import com.existingeevee.hermitsarsenal.misc.IExtendedReach;
 import com.existingeevee.hermitsarsenal.misc.IHasProbabilityProc;
+import com.existingeevee.hermitsarsenal.misc.event.LeftClickEvent;
+import com.existingeevee.hermitsarsenal.misc.particle.CustomParticleBuilder;
+import com.existingeevee.hermitsarsenal.misc.particle.SpawnCustomParticleAction;
+import com.existingeevee.hermitsarsenal.misc.particle.CustomParticle.ParticleShape;
 import com.google.common.collect.Multimap;
 
 import net.minecraft.client.util.ITooltipFlag;
@@ -33,6 +37,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.CooldownTracker;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -75,6 +80,28 @@ public class ItemSeismicHammer extends ItemSword implements IExtendedReach, IAut
 	@Override
 	public boolean shouldProcEasterEgg(ItemStack stack, @Nullable World worldIn) {
 		return worldIn != null && worldIn.getPlayerEntityByName("Evan_Wingerter") != null;
+	}
+	
+	public static final CustomParticleBuilder HAMMER_SHASH = new CustomParticleBuilder(
+			new ResourceLocation(HermitsArsenal.MODID, "textures/particle/hammer_smash/hammer_smash_1.png"),
+			new ResourceLocation(HermitsArsenal.MODID, "textures/particle/hammer_smash/hammer_smash_2.png"),
+			new ResourceLocation(HermitsArsenal.MODID, "textures/particle/hammer_smash/hammer_smash_3.png"),
+			new ResourceLocation(HermitsArsenal.MODID, "textures/particle/hammer_smash/hammer_smash_4.png")).withMaxAge(4).withShape(ParticleShape.FLAT).withSize(12);
+
+	
+	@SubscribeEvent
+	public void onLeftClick(LeftClickEvent event) {
+		EntityPlayer player = event.getEntityPlayer();
+
+		if (!player.world.isRemote && player.getHeldItemMainhand().getItem() == this && this.getClass() == ItemSeismicHammer.class) {
+			CustomParticleBuilder builder = HAMMER_SHASH.clone().setPitchYaw(player.rotationYaw, player.rotationPitch);
+
+			Vec3d lookVec = player.getLookVec();
+			Vec3d loc = player.getPositionEyes(0.5f).add(lookVec.scale(1.75));
+			SpawnCustomParticleAction.INSTANCE.run(player.getEntityWorld(), loc.x, loc.y, loc.z, builder.toNBT());
+			
+			player.world.playSound(null, player.getPosition(), SoundEvents.BLOCK_ANVIL_PLACE, SoundCategory.PLAYERS, 2.5f, 0.7f);
+		}
 	}
 
 	@SubscribeEvent
