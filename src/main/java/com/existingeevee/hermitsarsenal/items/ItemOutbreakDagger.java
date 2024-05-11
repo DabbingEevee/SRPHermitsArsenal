@@ -124,7 +124,7 @@ public class ItemOutbreakDagger extends ItemSword implements IHasProbabilityProc
 		}
 	}
 
-	double procPercentage = 0.25;
+	double procPercentage = 0.375;
 	int maxAmplifier = 3;
 
 	@Override

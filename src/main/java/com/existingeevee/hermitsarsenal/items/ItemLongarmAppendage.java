@@ -25,7 +25,7 @@ public class ItemLongarmAppendage extends ItemHA implements IOffhandExtendedReac
 		super(name);
 		this.setMaxStackSize(1);
 		this.reach = reach;
-		this.setMaxDamage((int) (reach * 100));
+		this.setMaxDamage((int) (reach * 1000));
 	}
 
 	@Override

@@ -87,7 +87,7 @@ public class ItemIgnisKnife extends ItemSword implements IHasProbabilityProc, IM
 		return list;
 	}
 
-	double procPercentage = 0.25;
+	double procPercentage = 0.375;
 	double initialDamageBonus = 2;
 	double fireAspectDamageBonus = 1;
 	int fireTimeSeconds = 5;
